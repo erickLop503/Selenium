@@ -32,7 +32,7 @@ public class Task1 extends CommonMethods{
 	WebElement element=driver.findElement(By.xpath("//h4[text()='Hello World!']"));
 	
 	if(element.isDisplayed()) {
-		System.out.println(" displayed");
+		System.out.println("Is displayed");
 	} else {
 		System.out.println("Is not");
 	}

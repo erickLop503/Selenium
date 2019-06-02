@@ -32,10 +32,10 @@ public class MethodsReUse {
 
 	public static void browserSetUp(String browser, String URL) {
 		if (browser.equalsIgnoreCase("chrome")) {
-			System.setProperty("webdriver.chrome.driver", "/Users/ericklopez/Documents/JARfiles/chromedriver");
+			System.setProperty("webdriver.chrome.driver", "src/drivers/chromedriver");
 			driver = new ChromeDriver();
 		} else if (browser.equalsIgnoreCase("firefox")) {
-			System.setProperty("webdriver.gecko.driver", "/Users/ericklopez/Documents/Jarfiles/geckodriver");
+			System.setProperty("webdriver.gecko.driver", "src/drivers/geckodriver");
 			driver = new FirefoxDriver();
 		}
 

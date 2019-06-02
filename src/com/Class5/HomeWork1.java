@@ -21,20 +21,20 @@ public class HomeWork1 {
 
 		Select obj = new Select(monthsDD);
 		List<WebElement> allOptions = obj.getOptions();
-		System.out.println(allOptions.size());
+		System.out.println(allOptions.size()-1);
 		
 
 		WebElement daysDD = driver.findElement(By.id("day"));
 
 		Select obj1 = new Select(daysDD);
 		List<WebElement> allOptions1 = obj1.getOptions();
-		System.out.println(allOptions1.size());
+		System.out.println(allOptions1.size()-1);
 
 		WebElement yearsDD = driver.findElement(By.id("year"));
 
 		Select obj2 = new Select(yearsDD);
 		List<WebElement> allOptions2 = obj2.getOptions();
-		System.out.println(allOptions2.size());
+		System.out.println(allOptions2.size()-1);
 		
 		Select obj3 = new Select(monthsDD);
 		Thread.sleep(2000);
